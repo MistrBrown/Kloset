@@ -6,6 +6,8 @@ import * as serviceWorker from './services/serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
+fetch('/yoloswag').then(res => res.text().then(text => console.log(text)));
+
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
